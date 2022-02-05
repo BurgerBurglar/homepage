@@ -58,7 +58,10 @@ const Home: NextPage = () => {
         .photo {
           position: relative;
         }
-
+        .photo:hover {
+          box-shadow: 0px 0px 30px yellow;
+          transform: translateY(-0.2rem);
+        }
         .photo .photoTag {
           position: absolute;
           top: 0;
