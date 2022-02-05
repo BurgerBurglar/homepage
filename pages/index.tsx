@@ -34,7 +34,11 @@ const Home: NextPage = () => {
         .background {
           min-width: 100%;
           min-height: 100%;
-          background-color: #323330;
+          background-image: url("/background.webp"),
+            linear-gradient(#eb01a5, #d13531);
+          background-repeat: repeat;
+          background-size: 10%;
+          background-blend-mode: darken;
         }
         main {
           flex: 1;
@@ -44,6 +48,7 @@ const Home: NextPage = () => {
           align-items: center;
           color: white;
           max-width: 1440px;
+          background-color: #323330;
           margin: auto;
           padding: 0 1rem;
         }
