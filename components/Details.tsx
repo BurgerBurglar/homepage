@@ -125,7 +125,7 @@ export const Details: React.FC<DetailsProps> = () => {
         }
 
         ul {
-          line-height: 1.8rem;
+          line-height: 2.5rem;
         }
 
         li,
