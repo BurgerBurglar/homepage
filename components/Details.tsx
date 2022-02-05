@@ -17,24 +17,30 @@ import {
   SiGithub,
   SiMaildotru,
 } from "react-icons/si";
+import { useIsTablet } from "../utils/useIsMobile";
 
 interface DetailsProps {}
 
 export const Details: React.FC<DetailsProps> = () => {
+  const isTablet = useIsTablet();
+  const flexDirection = isTablet ? "column" : "row";
+  const marginLeft = isTablet ? 0 : "2rem";
   return (
     <>
       <div className="details">
         <section>
           <h2>I&apos;ve made these websites...</h2>
-          <li>
-            <a href="https://megacritic.vercel.app/">Megacritic</a>
-          </li>
-          <li>
-            <a href="">No name</a>
-          </li>
-          <li>
-            <a href="">Pet finder</a>
-          </li>
+          <ul>
+            <li>
+              <a href="https://megacritic.vercel.app/">Megacritic</a>
+            </li>
+            <li>
+              <a href="">No name</a>
+            </li>
+            <li>
+              <a href="">Pet finder</a>
+            </li>
+          </ul>
         </section>
         <section>
           <h2>I know these skills...</h2>
@@ -80,32 +86,35 @@ export const Details: React.FC<DetailsProps> = () => {
         </section>
         <section>
           <h2>Please reach me at...</h2>
-          <li>
-            <a href="https://www.linkedin.com/in/shuo-tian/">
-              <SiLinkedin color="#2867B2" /> LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/BurgerBurglar/">
-              <SiGithub /> GitHub
-            </a>
-          </li>
-          <li>
-            <a href="tianshuo1996@outlook.com">
-              <SiMaildotru /> Email me
-            </a>
-          </li>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/shuo-tian/">
+                <SiLinkedin color="#2867B2" /> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/BurgerBurglar/">
+                <SiGithub /> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="tianshuo1996@outlook.com">
+                <SiMaildotru /> Email me
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
       <style jsx>{`
         .details {
-          width: 100%;
+          width: fit-content;
           display: flex;
           justify-content: center;
+          flex-direction: ${flexDirection};
         }
 
         section {
-          margin-left: 2rem;
+          margin-left: ${marginLeft};
         }
         section:first-child {
           margin-left: 0;

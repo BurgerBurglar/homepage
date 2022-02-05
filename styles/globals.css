@@ -16,7 +16,7 @@ body {
 }
 
 * {
-  cursor: url('/mouse.png'), auto
+  cursor: url('/mouse.png'), auto;
 }
 
 a, button {
