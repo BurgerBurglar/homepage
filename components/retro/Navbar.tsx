@@ -26,6 +26,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 <a>Blogs</a>
               </Link>
             </li>
+            <li>
+              <Link href="/home" passHref>
+                <a>Take me to the modern world</a>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
