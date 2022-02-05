@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <main>
           <h1>
             Hello, my name is{" "}
-            <span className={styles.name}>
+            <span className="name">
               {"Shuo Tian".split("").map((char, i) => (
                 <span key={i}>{char}</span>
               ))}
@@ -54,6 +54,9 @@ const Home: NextPage = () => {
           border-color: black;
           margin: auto;
           padding: 0 1rem;
+        }
+        .name span:hover {
+          color: red;
         }
         .photo {
           position: relative;
