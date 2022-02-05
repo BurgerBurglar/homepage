@@ -76,7 +76,7 @@ export const Details: React.FC<DetailsProps> = () => {
               <SiRedis color="D82C20" /> Redis...)
             </li>
             <li>
-              <Image src="/python.png" alt="python" height={25} width={25} />{" "}
+              <Image src="/python.png" alt="python" height={20} width={20} />{" "}
               Python!!!
             </li>
             <li>
@@ -122,6 +122,10 @@ export const Details: React.FC<DetailsProps> = () => {
 
         h2 {
           font-size: 1.5rem;
+        }
+
+        ul {
+          line-height: 1.8rem;
         }
 
         li,
