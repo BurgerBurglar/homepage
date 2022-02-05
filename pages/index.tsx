@@ -24,7 +24,13 @@ const Home: NextPage = () => {
             , a front-end developer.
           </h1>
           <div className="photo">
-            <Image src="/photo.jpg" width={300} height={300} alt="my photo" />
+            <Image
+              src="/photo.jpg"
+              width={300}
+              height={300}
+              alt="my photo"
+              priority
+            />
             <div className="photoTag">Best Seller</div>
           </div>
           <Details />
