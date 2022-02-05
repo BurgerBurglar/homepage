@@ -9,16 +9,18 @@ export const Footer: React.FC<FooterProps> = () => {
   return (
     <>
       <footer>
+        <Image src="/genie.webp" alt="genie" width={50} height={50} />
         <Image src="/copyleft.webp" alt="copyleft" width={10} height={10} />
         <span className="copyleft">
           2022 Shuo Tian no rights reserved do whatever you want
         </span>
+        <Image src="/funstuff.gif" alt="genie" width={50} height={50} />
       </footer>
       <style jsx>{`
         footer {
           text-align: center;
           flex-grow: 0;
-          height: 2rem;
+          height: fit-content;
           display: flex;
           align-items: center;
           justify-content: center;
