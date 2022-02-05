@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { useFont } from "../utils/useFont";
+import { useFont } from "../../utils/useFont";
 
 interface FooterProps {}
 

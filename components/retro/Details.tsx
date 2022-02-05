@@ -17,7 +17,7 @@ import {
   SiGithub,
   SiMaildotru,
 } from "react-icons/si";
-import { useIsTablet } from "../utils/useIsMobile";
+import { useIsTablet } from "../../utils/useIsMobile";
 
 interface DetailsProps {}
 
