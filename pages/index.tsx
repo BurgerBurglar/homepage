@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           </h1>
           <div className="photo">
             <Image src="/photo.jpg" width={300} height={300} alt="my photo" />
-            <div className="photoTag">hot</div>
+            <div className="photoTag">Best Seller</div>
           </div>
           <Details />
         </main>
@@ -61,8 +61,8 @@ const Home: NextPage = () => {
 
         .photo .photoTag {
           position: absolute;
-          top: -1rem;
-          right: -1rem;
+          top: 0;
+          right: -3rem;
           padding: 1rem;
           background-color: #ff0000bb;
           color: yellow;

@@ -38,7 +38,7 @@ export const Details: React.FC<DetailsProps> = () => {
               <a href="">No name</a>
             </li>
             <li>
-              <a href="">Pet finder</a>
+              <a href="">Pet Finder</a>
             </li>
           </ul>
         </section>
