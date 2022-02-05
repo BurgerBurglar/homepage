@@ -98,7 +98,7 @@ export const Details: React.FC<DetailsProps> = () => {
               </a>
             </li>
             <li>
-              <a href="tianshuo1996@outlook.com">
+              <a href="mailto:tianshuo1996@outlook.com">
                 <SiMaildotru /> Email me
               </a>
             </li>
