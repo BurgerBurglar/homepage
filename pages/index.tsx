@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         .background {
           min-width: 100%;
           min-height: 100%;
-          background-image: url("/background.webp"),
+          background-image: url("/rainbow-cat.gif"),
             linear-gradient(#eb01a5, #d13531);
           background-repeat: repeat;
           background-size: 10%;
