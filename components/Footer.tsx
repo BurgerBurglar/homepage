@@ -12,6 +12,10 @@ export const Footer: React.FC<FooterProps> = () => {
         footer {
           text-align: center;
           flex-grow: 0;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         * {
