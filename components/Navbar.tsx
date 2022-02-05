@@ -68,7 +68,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
           background-clip: text;
           letter-spacing: 0.1rem;
         }
-
+        .navLinks a:hover {
+          color: yellow;
+        }
         .navLinks {
           list-style: none;
           padding: 0;
