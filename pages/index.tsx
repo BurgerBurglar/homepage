@@ -84,8 +84,12 @@ const Home: NextPage = () => {
           transform: rotate(45deg);
           border-radius: 50%;
         }
-
+        a,
+        button {
+          cursor: url("/pointer.png"), pointer;
+        }
         * {
+          cursor: url("/mouse.png"), auto;
           font-family: "Comic Neue", cursive;
         }
       `}</style>

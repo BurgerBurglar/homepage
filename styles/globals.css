@@ -17,14 +17,6 @@ body {
   flex-direction: column;
 }
 
-* {
-  cursor: url('/mouse.png'), auto;
-}
-
-a, button {
-  cursor: url('/pointer.png'), pointer
-}
-
 #app {
   height: 100%
 }
