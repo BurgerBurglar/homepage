@@ -47,7 +47,7 @@ export const Details: React.FC<DetailsProps> = () => {
           <ul className="skills">
             <li>
               <SiTypescript color="#007acc" /> TypeScript{" "}
-              <Image src="/hot.gif" alt="genie" width={30} height={20} />
+              <Image src="/hot.gif" alt="hot" width={40} height={20} />
             </li>
             <li>
               <DiJavascript1 color="#F0DB4F" /> JavaScript
