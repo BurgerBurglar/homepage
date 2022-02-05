@@ -48,7 +48,10 @@ const Home: NextPage = () => {
           align-items: center;
           color: white;
           max-width: 1440px;
-          background-color: #323330;
+          background-color: #323330ee;
+          border: solid;
+          border-width: 0 2px;
+          border-color: black;
           margin: auto;
           padding: 0 1rem;
         }
