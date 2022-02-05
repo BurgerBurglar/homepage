@@ -10,7 +10,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
     <>
       <nav>
         <div className="navContainer">
-          <span className="logo">Shuo Tian</span>
+          <span className="logo">
+            <Link href="/" passHref>
+              <a>Shuo Tian</a>
+            </Link>
+          </span>
           <ul className="navLinks">
             <li>
               <Link href="/" passHref>
@@ -42,8 +46,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
           width: 100%;
         }
 
-        nav .logo {
+        nav .logo a {
           font-size: 1.8rem;
+          text-decoration: none;
           width: max-content;
           font-weight: 900;
           color: transparent;
@@ -58,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             #aa04a7
           );
           -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 0.016em #eaeaea;
+          -webkit-text-stroke: 0.01em #eaeaea;
           -webkit-background-clip: text;
           background-clip: text;
           letter-spacing: 0.1rem;
