@@ -1,15 +1,75 @@
-.container {
-  padding: 0 2rem;
+.nav {
+  background-color: darkblue;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.nav .logo {
+  height: 100%;
+  font-size: 1.8rem;
+  width: max-content;
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(to left, #a104ad, #0b2be0, #329941, #f7f658, #f16412, #e92153, #aa04a7);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.016em #eaeaea;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.1rem;
+}
+
+.navLink {
+  list-style: none;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.navLink li {
+  display: inline;
+  margin-left: 2rem;
+}
+
+.navLink li:first-child {
+  margin-left: 0;
+}
+
+.navLink li a {
+  color: white
+}
+
+.photo {
+  position: relative;
+}
+
+.photoTag {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  padding: 1rem;
+  background-color: #FF0000BB;
+  color: yellow;
+  font-size: 1.5rem;
+  transform: rotate(45deg);
+  border-radius: 50%;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #323330;
+  color: white;
 }
 
 .footer {
