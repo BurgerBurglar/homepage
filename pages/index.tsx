@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         }
 
         * {
-          font-family: "Comic Sans MS", "Comic Sans", cursive;
+          font-family: "Comic Sans", sans-serif;
         }
       `}</style>
     </>
