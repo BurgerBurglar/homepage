@@ -10,7 +10,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
     <>
       <nav>
         <div className="navContainer">
-          <span className="logo"> Shuo Tian</span>
+          <span className="logo">Shuo Tian</span>
           <ul className="navLinks">
             <li>
               <Link href="/" passHref>
@@ -43,7 +43,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
         }
 
         nav .logo {
-          height: 100%;
           font-size: 1.8rem;
           width: max-content;
           font-weight: 900;
