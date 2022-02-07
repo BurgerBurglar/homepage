@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
 export const Layout: React.FC = ({ children }) => {
@@ -10,6 +11,7 @@ export const Layout: React.FC = ({ children }) => {
       <Box className="content" pt={navbarH}>
         {children}
       </Box>
+      <Footer />
     </>
   );
 };
