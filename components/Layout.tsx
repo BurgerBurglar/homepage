@@ -7,7 +7,9 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Navbar h={navbarH} />
-      <Box pt={navbarH}>{children}</Box>
+      <Box className="content" pt={navbarH}>
+        {children}
+      </Box>
     </>
   );
 };
