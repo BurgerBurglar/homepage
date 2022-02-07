@@ -1,0 +1,13 @@
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import { Navbar } from "./Navbar";
+
+export const Layout: React.FC = ({ children }) => {
+  const navbarH = "3rem";
+  return (
+    <>
+      <Navbar h={navbarH} />
+      <Box pt={navbarH}>{children}</Box>
+    </>
+  );
+};
