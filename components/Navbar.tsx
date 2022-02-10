@@ -30,11 +30,12 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
     <Flex
       as="nav"
       position="fixed"
+      zIndex={9}
       w="full"
       align="center"
-      bgColor="#1b242f"
-      borderBottom="3px solid"
-      borderColor="#007acc"
+      bgColor="#007acc11"
+      borderBottom="2px solid"
+      borderColor="#007acc33"
       {...props}
     >
       <Container maxW="container.lg" display="flex" alignItems="center">
