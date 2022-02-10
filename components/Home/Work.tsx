@@ -24,7 +24,6 @@ const Card: React.FC<CardProps> = ({
     rounded="lg"
     overflow="hidden"
     shadow="lg"
-    bgColor="#FFFFFF22"
   >
     <NextLink href={link} passHref>
       <Link display="inherit">
