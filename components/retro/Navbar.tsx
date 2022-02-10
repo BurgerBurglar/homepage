@@ -12,8 +12,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const navAlign = isMobile ? "start" : "center";
   const linksMargin = isMobile ? 0 : "2rem";
 
-  console.log({ navFlexDirection });
-
   return (
     <>
       <nav>

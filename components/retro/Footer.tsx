@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = () => {
       </footer>
       <style jsx>{`
         footer {
-          text-align: center;
+          text-align: left;
           flex-grow: 0;
           height: fit-content;
           display: flex;
