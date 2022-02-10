@@ -62,12 +62,14 @@ const Home: NextPage = () => {
           border-color: black;
           margin: auto;
           padding: 0 1rem;
+          overflow: hidden;
         }
         .name span:hover {
           color: red;
         }
         .photo {
           position: relative;
+          max-width: 80vw;
         }
         .photo:hover {
           box-shadow: 0px 0px 30px yellow;
@@ -76,11 +78,11 @@ const Home: NextPage = () => {
         .photo .photoTag {
           position: absolute;
           top: 0;
-          right: -3rem;
+          right: max(-3rem, -10vw);
           padding: 1rem;
           background-color: #ff0000bb;
           color: yellow;
-          font-size: 1.5rem;
+          font-size: min(1.5rem, 5vmin);
           transform: rotate(45deg);
           border-radius: 50%;
         }

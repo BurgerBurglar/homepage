@@ -17,12 +17,12 @@ import {
   SiGithub,
   SiMaildotru,
 } from "react-icons/si";
-import { useIsTablet } from "../../utils/useIsMobile";
+import { useBreakPoint } from "../../utils/useBreakPoint";
 
 interface DetailsProps {}
 
 export const Details: React.FC<DetailsProps> = () => {
-  const isTablet = useIsTablet();
+  const isTablet = useBreakPoint();
   const flexDirection = isTablet ? "column" : "row";
   const marginLeft = isTablet ? 0 : "2rem";
   return (

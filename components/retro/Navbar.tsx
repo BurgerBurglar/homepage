@@ -1,11 +1,19 @@
 import Link from "next/link";
 import React from "react";
+import { useBreakPoint } from "../../utils/useBreakPoint";
 import { useFont } from "../../utils/useFont";
 
 interface NavbarProps {}
 
 export const Navbar: React.FC<NavbarProps> = () => {
   const font = useFont();
+  const isMobile = useBreakPoint(520);
+  const navFlexDirection = isMobile ? "column" : "row";
+  const navAlign = isMobile ? "start" : "center";
+  const linksMargin = isMobile ? 0 : "2rem";
+
+  console.log({ navFlexDirection });
+
   return (
     <>
       <nav>
@@ -38,7 +46,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
       <style jsx>{`
         nav {
           background-color: darkblue;
-          height: 3rem;
           display: flex;
           justify-content: center;
         }
@@ -46,7 +53,8 @@ export const Navbar: React.FC<NavbarProps> = () => {
         .navContainer {
           padding: 0 1rem;
           display: flex;
-          align-items: center;
+          flex-direction: ${navFlexDirection};
+          align-items: ${navAlign};
           max-width: 1440px;
           width: 100%;
         }
@@ -79,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
         .navLinks {
           list-style: none;
           padding: 0;
-          margin-left: 2rem;
+          margin-left: ${linksMargin};
         }
 
         .navLinks li {
