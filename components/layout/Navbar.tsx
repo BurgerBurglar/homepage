@@ -1,14 +1,19 @@
 import {
+  Button,
   Container,
   Flex,
   FlexProps,
   HStack,
   Link,
   LinkProps,
+  Spacer,
+  Switch,
+  useColorMode,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { ReactElement } from "react";
+import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
@@ -39,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       {...props}
     >
       <Container maxW="container.lg" display="flex" alignItems="center">
-        <HStack spacing={8} color="white" fontSize="1.2rem">
+        <HStack spacing={8} color="gray.800" fontSize="1.2rem" w="full">
           <NavLink
             href="/home"
             h="36px"
@@ -49,6 +54,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
           />
           <NavLink href="/blogs" content="blogs" />
           <NavLink href="/" content="retro" />
+          <Spacer />
         </HStack>
       </Container>
     </Flex>

@@ -7,6 +7,11 @@ const theme = extendTheme({
       },
     }),
   },
+  colors: {
+    theme: "#007acc",
+    millet: "#f0efd1",
+    dark: "#0f102e",
+  },
 });
 
 export default theme;
