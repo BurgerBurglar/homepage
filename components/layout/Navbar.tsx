@@ -6,6 +6,7 @@ import {
   HStack,
   Link,
   LinkProps,
+  Select,
   Spacer,
   Switch,
   useColorMode,
@@ -44,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       {...props}
     >
       <Container maxW="container.lg" display="flex" alignItems="center">
-        <HStack spacing={8} color="gray.800" fontSize="1.2rem" w="full">
+        <HStack spacing="5rem" color="gray.800" fontSize="1.2rem" w="full">
           <NavLink
             href="/home"
             h="36px"
@@ -55,6 +56,21 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
           <NavLink href="/blogs" content="blogs" />
           <NavLink href="/" content="retro" />
           <Spacer />
+
+          <Select
+            variant="unstyled"
+            defaultValue="en"
+            w="fit-content"
+            sx={{
+              option: {
+                bgColor: "millet",
+                color: "gray.800",
+              },
+            }}
+          >
+            <option value="en">English</option>
+            <option value="zh-CN">简体中文</option>
+          </Select>
         </HStack>
       </Container>
     </Flex>
