@@ -21,13 +21,14 @@ export const Contact: React.FC<ContactProps> = () => {
         py="10rem"
       >
         <Spacing />
-        <Flex direction="column" align="center" position="relative">
+        <Flex direction="column" align="center">
           <Heading fontSize="4rem">Let&apos;s get in touch.</Heading>
           <Text fontSize="1.5rem" mt={3}>
             Want to hire me, work with me on a side project, or simply say hi?
           </Text>
           <Flex
             justify="space-between"
+            position="relative"
             fontSize="2rem"
             w="full"
             maxW="15rem"
@@ -60,22 +61,22 @@ export const Contact: React.FC<ContactProps> = () => {
                 }}
               />
             </Link>
+            <GoTo
+              to="#me"
+              color="corn"
+              hoverBg="dark"
+              isTop
+              position="absolute"
+              top="calc(100% + 20px)"
+            >
+              <Text>
+                Back to the{" "}
+                <Box as="span" fontWeight="bold">
+                  Top
+                </Box>
+              </Text>
+            </GoTo>
           </Flex>
-          {/* <GoTo
-            to="#me"
-            color="corn"
-            hoverBg="dark"
-            isTop
-            position="absolute"
-            bottom="15%"
-          >
-            <Text>
-              Back to the{" "}
-              <Box as="span" fontWeight="bold">
-                Top
-              </Box>
-            </Text>
-          </GoTo> */}
         </Flex>
         <Spacing />
       </Flex>
