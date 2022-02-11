@@ -1,4 +1,5 @@
 import {
+  AspectRatio,
   Box,
   Flex,
   Icon,
@@ -26,8 +27,10 @@ export const Me: React.FC<MeProps> = () => {
       h="100vh"
     >
       <Stack align="stretch" spacing={5} zIndex={2} px={5} maxW="container.sm">
-        <Flex justify="center" w="full">
-          <Image src="/photo.jpg" alt="me" width={300} height={300} />
+        <Flex justify="center">
+          <AspectRatio ratio={1} w="full" maxW={300}>
+            <Image src="/photo.jpg" alt="me" layout="fill" />
+          </AspectRatio>
         </Flex>
         <Stack>
           <Text>Hi, my name is</Text>
