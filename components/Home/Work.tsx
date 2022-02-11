@@ -120,24 +120,33 @@ export const Work: React.FC = () => {
         </Heading>
         <Card
           name="Megacritic"
-          link="https://megacritic.vercel.app/"
-          description="A incrementally generated static site for movie fanatics."
+          link="https://megacritic.shuo.rocks/"
+          description="For movie fanatics. Rate, review, and explore."
           image="/megacritic.webp"
+          tags={["React", "Next.js", "TypeScript", "Chakra UI"]}
+        />
+        <Card
+          name="Take Me Home"
+          link="https://takemehome.shuo.rocks/"
+          description="Wanna adopt?"
+          image="/take-me-home.webp"
           tags={["React", "Next.js", "TypeScript"]}
         />
         <Card
-          name="Megacritic"
+          name="No Name"
           link="https://megacritic.vercel.app/"
-          description="A incrementally generated static site for movie fanatics."
+          description="Post, comment, and reply anonymously."
           image="/megacritic.webp"
-          tags={["React", "Next.js", "TypeScript"]}
-        />
-        <Card
-          name="Megacritic"
-          link="https://megacritic.vercel.app/"
-          description="A incrementally generated static site for movie fanatics."
-          image="/megacritic.webp"
-          tags={["React", "Next.js", "TypeScript"]}
+          tags={[
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Express.js",
+            "Prisma",
+            "PostgreSQL",
+            "Cloudinary",
+            "Markdown",
+          ]}
         />
       </Stack>
     </Box>
