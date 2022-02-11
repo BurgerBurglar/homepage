@@ -67,7 +67,14 @@ export const Contact: React.FC<ContactProps> = () => {
             </Link>
           </WrapItem>
         </Wrap>
-        <GoTo to="#me" isTop position="absolute" bottom="15%">
+        <GoTo
+          to="#me"
+          color="corn"
+          hoverBg="dark"
+          isTop
+          position="absolute"
+          bottom="15%"
+        >
           <Text>
             Back to the{" "}
             <Box as="span" fontWeight="bold">

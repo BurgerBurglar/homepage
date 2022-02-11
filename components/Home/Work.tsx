@@ -153,7 +153,7 @@ export const Work: React.FC = () => {
           ]}
         />
       </Stack>
-      <GoTo to="#contact" pb="8rem">
+      <GoTo to="#contact" color="dark" hoverBg="corn" pb="8rem">
         <Text>
           Wanna{" "}
           <Box as="span" fontWeight="bold">

@@ -38,7 +38,7 @@ export const Me: React.FC<MeProps> = () => {
             performant, accessible, and intuitive.
           </Text>
         </Stack>
-        <GoTo to="#work">
+        <GoTo to="#work" color="millet" hoverBg="dark">
           <Text>
             Check out{" "}
             <Box as="span" fontWeight="bold">

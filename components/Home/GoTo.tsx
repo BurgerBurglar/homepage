@@ -8,12 +8,16 @@ import {
 interface GoToProps extends FlexProps {
   to: string;
   isTop?: boolean;
+  color: string;
+  hoverBg: string;
 }
 
 export const GoTo: React.FC<GoToProps> = ({
   children,
   to,
   isTop = false,
+  color,
+  hoverBg,
   ...props
 }) => {
   const icon = isTop ? IoIosArrowDropupCircle : IoIosArrowDropdownCircle;
@@ -26,13 +30,13 @@ export const GoTo: React.FC<GoToProps> = ({
         bgColor="accent"
         textTransform="uppercase"
         fontSize="1.1rem"
-        color="millet"
+        color={color}
         rounded="full"
         w="fit-content"
         px="1em"
         py="0.2em"
         _hover={{
-          bgColor: "dark",
+          bgColor: hoverBg,
           transition: "background-color 0.6s ease",
         }}
       >
