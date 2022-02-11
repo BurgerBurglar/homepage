@@ -1,4 +1,5 @@
 import {
+  Box,
   Center,
   Flex,
   Heading,
@@ -9,15 +10,17 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import { SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si";
+import { GoTo } from "./GoTo";
 
 interface ContactProps {}
 
 export const Contact: React.FC<ContactProps> = () => {
   return (
-    <Center bgColor="millet" h="100vh">
+    <Center id="contact" bgColor="millet" h="100vh">
       <Flex
         direction="column"
         align="center"
+        position="relative"
         maxW="container.lg"
         w="full"
         border="1px solid"
@@ -64,6 +67,14 @@ export const Contact: React.FC<ContactProps> = () => {
             </Link>
           </WrapItem>
         </Wrap>
+        <GoTo to="#me" isTop position="absolute" bottom="15%">
+          <Text>
+            Back to the{" "}
+            <Box as="span" fontWeight="bold">
+              Top
+            </Box>
+          </Text>
+        </GoTo>
       </Flex>
     </Center>
   );

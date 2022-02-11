@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import NextLink from "next/link";
 import { useBreakPoint } from "../../utils/useBreakPoint";
+import { GoTo } from "./GoTo";
 
 interface CardProps {
   name: string;
@@ -97,7 +98,7 @@ const Card: React.FC<CardProps> = ({
 
 export const Work: React.FC = () => {
   return (
-    <Box bgColor="dark">
+    <Box id="work" bgColor="dark">
       <Stack
         id="projects"
         spacing={8}
@@ -108,7 +109,8 @@ export const Work: React.FC = () => {
         maxW="container.lg"
         mx="auto"
         p={5}
-        py="5rem"
+        pt="5rem"
+        pb="3rem"
       >
         <Heading
           position="relative"
@@ -151,6 +153,15 @@ export const Work: React.FC = () => {
           ]}
         />
       </Stack>
+      <GoTo to="#contact" pb="8rem">
+        <Text>
+          Wanna{" "}
+          <Box as="span" fontWeight="bold">
+            talk
+          </Box>
+          ?
+        </Text>
+      </GoTo>
     </Box>
   );
 };

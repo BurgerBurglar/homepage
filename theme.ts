@@ -10,7 +10,9 @@ const theme = extendTheme({
   colors: {
     theme: "#007acc",
     millet: "#f0efd1",
+    corn: "#cfba58",
     dark: "#0f102e",
+    accent: "#bf3211",
   },
 });
 

@@ -1,28 +1,21 @@
-import {
-  AspectRatio,
-  Box,
-  Flex,
-  Icon,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { AspectRatio, Box, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsMouse } from "react-icons/bs";
+import { GoTo } from "./GoTo";
 
 interface MeProps {}
 
 export const Me: React.FC<MeProps> = () => {
   const color = "gray.800";
-  const bgColor = "millet";
   return (
     <Flex
+      id="me"
       position="relative"
       justify="center"
       align="center"
       textAlign="center"
       fontSize="1.5rem"
-      bg={bgColor}
+      bg="millet"
       color={color}
       h="100vh"
     >
@@ -45,6 +38,14 @@ export const Me: React.FC<MeProps> = () => {
             performant, accessible, and intuitive.
           </Text>
         </Stack>
+        <GoTo to="#work">
+          <Text>
+            Check out{" "}
+            <Box as="span" fontWeight="bold">
+              my work
+            </Box>
+          </Text>
+        </GoTo>
       </Stack>
       <Flex
         display={{ base: "none", md: "flex" }}
