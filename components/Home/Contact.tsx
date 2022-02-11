@@ -16,7 +16,7 @@ interface ContactProps {}
 
 export const Contact: React.FC<ContactProps> = () => {
   return (
-    <Center id="contact" bgColor="millet" h="100vh">
+    <Center id="contact" bgColor="corn" h="100vh">
       <Flex
         direction="column"
         align="center"
