@@ -13,7 +13,7 @@ const Home: NextPage<Props> = () => {
       </Head>
       <Me />
       <Work />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };

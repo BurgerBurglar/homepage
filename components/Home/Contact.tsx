@@ -1,32 +1,69 @@
-import { Heading, Link, Stack, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import {
+  Center,
+  Flex,
+  Heading,
+  Icon,
+  Link,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
 import { SiGithub, SiLinkedin, SiMaildotru } from "react-icons/si";
 
 interface ContactProps {}
 
 export const Contact: React.FC<ContactProps> = () => {
   return (
-    <Stack spacing={3}>
-      <Heading>Let&apos;s get in touch</Heading>
-      <Text fontSize="1.2rem">
-        Want to hire me, work with me on a side project, or simply say hi?
-      </Text>
-      <Wrap spacing={2} fontSize="1.2rem">
-        <WrapItem w="6rem">
-          <Link href="https://www.linkedin.com/in/shuo-tian/">
-            <SiLinkedin fontSize="1.5rem" color="#2867B2" /> LinkedIn
-          </Link>
-        </WrapItem>
-        <WrapItem w="6rem">
-          <Link href="https://github.com/BurgerBurglar/">
-            <SiGithub fontSize="1.5rem" /> GitHub
-          </Link>
-        </WrapItem>
-        <WrapItem w="6rem">
-          <Link href="mailto:tianshuo1996@outlook.com">
-            <SiMaildotru fontSize="1.5rem" /> Email
-          </Link>
-        </WrapItem>
-      </Wrap>
-    </Stack>
+    <Center bgColor="millet" h="100vh">
+      <Flex
+        direction="column"
+        align="center"
+        maxW="container.lg"
+        w="full"
+        border="1px solid"
+        borderColor="theme"
+        py="10rem"
+      >
+        <Heading fontSize="4rem">Let&apos;s get in touch.</Heading>
+        <Text fontSize="1.5rem" mt={3}>
+          Want to hire me, work with me on a side project, or simply say hi?
+        </Text>
+        <Wrap spacing={2} fontSize="2rem" mt={8}>
+          <WrapItem w="6rem">
+            <Link href="https://www.linkedin.com/in/shuo-tian/">
+              <Icon
+                as={SiLinkedin}
+                color="#2867B2"
+                _hover={{
+                  boxShadow: "0px 0px 0.3rem var(--chakra-colors-theme)",
+                }}
+              />
+            </Link>
+          </WrapItem>
+          <WrapItem w="6rem">
+            <Link href="https://github.com/BurgerBurglar/">
+              <Icon
+                as={SiGithub}
+                rounded="full"
+                _hover={{
+                  boxShadow: "0px 0px 0.3rem var(--chakra-colors-theme)",
+                }}
+              />
+            </Link>
+          </WrapItem>
+          <WrapItem w="6rem">
+            <Link href="mailto:tianshuo1996@outlook.com">
+              <Icon
+                as={SiMaildotru}
+                rounded="full"
+                _hover={{
+                  boxShadow: "0px 0px 0.3rem var(--chakra-colors-theme)",
+                }}
+              />
+            </Link>
+          </WrapItem>
+        </Wrap>
+      </Flex>
+    </Center>
   );
 };
