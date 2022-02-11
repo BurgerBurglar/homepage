@@ -47,3 +47,19 @@ body {
 .project:nth-child(2n+1) .description-wrapper {
   flex-direction: row-reverse;
 }
+
+@media only screen and (max-width: 768px) {
+  #projects .project {
+    flex-direction: column
+  }
+
+  #projects .project .info {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  #projects .project:nth-child(2n+1) .heading-wrapper,
+  #projects .project:nth-child(2n+1) .description-wrapper {
+    flex-direction: row;
+  }
+}
