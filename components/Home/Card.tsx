@@ -89,7 +89,9 @@ export const Card: React.FC<CardProps> = ({
             maxW="20em"
             {...transition}
           >
-            {name}
+            <NextLink href={link} passHref>
+              <Link>{name}</Link>
+            </NextLink>
           </Heading>
           <Box flexShrink={0} w="2em" />
           <Box bgColor={headingColor} w="full" h="1px" {...transition} />
