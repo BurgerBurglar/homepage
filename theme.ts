@@ -11,7 +11,7 @@ const theme = extendTheme({
     theme: "#007acc",
     millet: "#f0efd1",
     corn: "#cfba58",
-    dark: "#0f102e",
+    dark: "#191919",
     accent: "#bf3211",
   },
 });

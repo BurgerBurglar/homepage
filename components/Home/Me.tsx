@@ -28,7 +28,7 @@ export const Me: React.FC<MeProps> = () => {
         <Stack>
           <Text>Hi, my name is</Text>
           <Box fontSize="3rem" fontWeight="bold" lineHeight="1em">
-            <Text as="h2" color="theme">
+            <Text as="h2" color="accent">
               Shuo Tian.
             </Text>
             <Text>I make websites.</Text>
