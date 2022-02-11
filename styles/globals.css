@@ -34,10 +34,16 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.project:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(2n+1) .info {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.project:nth-child(2n+1) .heading-wrapper,
+.project:nth-child(2n+1) .description-wrapper {
+  flex-direction: row-reverse;
 }
