@@ -108,6 +108,7 @@ export const Work: React.FC = () => {
         maxW="container.lg"
         mx="auto"
         p={5}
+        py="5rem"
       >
         <Heading
           position="relative"
@@ -115,6 +116,7 @@ export const Work: React.FC = () => {
           borderBottom="solid 0.2rem"
           borderColor="millet"
           pb={2}
+          mb="1.5rem"
         >
           Things that I&apos;ve made
         </Heading>

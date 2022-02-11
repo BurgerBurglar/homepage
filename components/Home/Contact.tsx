@@ -23,6 +23,7 @@ export const Contact: React.FC<ContactProps> = () => {
         border="1px solid"
         borderColor="theme"
         py="10rem"
+        mx="2rem"
       >
         <Heading fontSize="4rem">Let&apos;s get in touch.</Heading>
         <Text fontSize="1.5rem" mt={3}>
