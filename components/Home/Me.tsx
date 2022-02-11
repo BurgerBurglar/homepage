@@ -44,6 +44,7 @@ export const Me: React.FC<MeProps> = () => {
         </Stack>
       </Stack>
       <Flex
+        display={{ base: "none", md: "flex" }}
         direction="column"
         align="center"
         position="absolute"
