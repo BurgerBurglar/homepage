@@ -110,7 +110,7 @@ export const Work: React.FC = () => {
         mx="auto"
         p={5}
         pt="5rem"
-        pb="3rem"
+        pb="2.2rem"
       >
         <Heading
           position="relative"
