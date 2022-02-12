@@ -35,8 +35,6 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       align="center"
       bgColor="nav"
       fontWeight="bold"
-      // borderBottom="2px solid"
-      // borderColor="accent"
       {...props}
     >
       <Container maxW="container.lg" display="flex" alignItems="center">
