@@ -6,7 +6,7 @@ interface ContactProps {}
 
 export const Contact: React.FC<ContactProps> = () => {
   return (
-    <Center id="contact" bgColor="lessPlain" h="100vh" px="1rem">
+    <Center id="contact" bgColor="lessPlain" minH="100vh" px="1rem" py="4rem">
       <Flex direction="column" align="center" textAlign="center">
         <Heading fontSize="clamp(3rem, 7vw,4rem)">
           Let&apos;s get in touch.

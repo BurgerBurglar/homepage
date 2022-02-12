@@ -15,7 +15,7 @@ export const Work: React.FC = () => {
         maxW="container.lg"
         mx="auto"
         p={5}
-        pt="5rem"
+        pt="clamp(2rem, 10vmin, 4rem)"
         pb="2.2rem"
       >
         <Heading
@@ -58,7 +58,12 @@ export const Work: React.FC = () => {
           ]}
         />
       </Stack>
-      <GoTo to="#contact" color="dark" hoverBg="lessPlain" pb="8rem">
+      <GoTo
+        to="#contact"
+        color="dark"
+        hoverBg="lessPlain"
+        pb="clamp(2rem, 10vmin, 4rem)"
+      >
         <Text>
           Wanna{" "}
           <Box as="span" fontWeight="bold">

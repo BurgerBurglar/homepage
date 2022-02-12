@@ -17,7 +17,9 @@ export const Me: React.FC<MeProps> = () => {
       fontSize="1.5rem"
       bg="plain"
       color={color}
-      h="100vh"
+      minH="100vh"
+      pt="4rem"
+      pb="2rem"
     >
       <Stack align="stretch" spacing={5} zIndex={2} px={5} maxW="container.sm">
         <Flex justify="center">
@@ -27,7 +29,11 @@ export const Me: React.FC<MeProps> = () => {
         </Flex>
         <Stack>
           <Text>Hi, my name is</Text>
-          <Box fontSize="3rem" fontWeight="bold" lineHeight="1em">
+          <Box
+            fontSize="clamp(2rem, 10vmin, 3rem)"
+            fontWeight="bold"
+            lineHeight="1em"
+          >
             <Text as="h2" color="accent">
               Shuo Tian.
             </Text>
