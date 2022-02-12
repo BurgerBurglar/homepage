@@ -35,9 +35,9 @@ export const Card: React.FC<CardProps> = ({
   const imageMaxW = isSmallScreen ? "full" : 500;
 
   const { isHovered, handleMouseHover } = useHover();
-  const headingColor = isHovered ? "accent" : "millet";
-  const otherColor = isHovered ? "corn" : "millet";
-  const borderColor = isHovered ? "corn" : "#00000000";
+  const headingColor = isHovered ? "lessAccent" : "plain";
+  const otherColor = isHovered ? "lessPlain" : "plain";
+  const borderColor = isHovered ? "lessPlain" : "#00000000";
 
   const transition = { transition: "0.3s ease-in" };
 

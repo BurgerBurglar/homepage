@@ -8,11 +8,13 @@ const theme = extendTheme({
     }),
   },
   colors: {
-    theme: "#007acc",
-    millet: "#f0efd1",
-    corn: "#cfba58",
-    dark: "#191919",
-    accent: "#bf3211",
+    plain: "#FEFAE0",
+    lessPlain: "#E9D8A6",
+    dark: "#112330",
+    accent: "#BB3E03",
+    lessAccent: "#EE9B00",
+    text: "#001219",
+    nav: "#01497C",
   },
 });
 

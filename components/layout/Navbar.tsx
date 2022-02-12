@@ -10,12 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import { ReactElement, useRef, useState } from "react";
-import "swiper/css";
-import "swiper/css/effect-creative";
-import "swiper/css/pagination";
-import getNavbarBgColor from "../../utils/getNavbarBgColor";
-import isClientSide from "../../utils/isClientSide";
+import { ReactElement } from "react";
 
 interface NavLinkProps extends LinkProps {
   href: string;
@@ -30,40 +25,22 @@ const NavLink: React.FC<NavLinkProps> = ({ href, content, ...linkProps }) => (
 
 interface NavbarProps extends FlexProps {}
 export const Navbar: React.FC<NavbarProps> = (props) => {
-  const navbarRef = useRef<HTMLDivElement>(null);
-  const [navbarBg, setNavbarBg] = useState<string>("corn");
-
-  const updateBg = () => {
-    if (!isClientSide()) return;
-    window.onscroll = () => {
-      const position = window.scrollY;
-      const newNavbarBg = getNavbarBgColor(position);
-      if (
-        newNavbarBg !== undefined &&
-        navbarRef.current !== null &&
-        navbarBg !== newNavbarBg
-      ) {
-        setNavbarBg(newNavbarBg);
-      }
-    };
-  };
-  updateBg();
-
+  const color = "white";
   return (
     <Flex
-      ref={navbarRef}
       as="nav"
       position="fixed"
       zIndex={9}
       w="full"
       align="center"
-      bgColor={navbarBg}
-      borderBottom="2px solid"
-      borderColor="#007acc33"
+      bgColor="nav"
+      fontWeight="bold"
+      // borderBottom="2px solid"
+      // borderColor="accent"
       {...props}
     >
       <Container maxW="container.lg" display="flex" alignItems="center">
-        <HStack spacing="5rem" color="gray.800" fontSize="1.2rem" w="full">
+        <HStack spacing="5rem" color={color} fontSize="1.2rem" w="full">
           <NavLink
             href="/home"
             h="36px"
@@ -78,10 +55,12 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
           <Select
             variant="unstyled"
             defaultValue="en"
+            fontWeight="bold"
             w="fit-content"
             sx={{
               option: {
-                color: "gray.800",
+                bgColor: "nav",
+                color: color,
               },
             }}
           >

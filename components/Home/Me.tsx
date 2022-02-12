@@ -6,7 +6,7 @@ import { GoTo } from "./GoTo";
 interface MeProps {}
 
 export const Me: React.FC<MeProps> = () => {
-  const color = "gray.800";
+  const color = "text";
   return (
     <Flex
       id="me"
@@ -15,7 +15,7 @@ export const Me: React.FC<MeProps> = () => {
       align="center"
       textAlign="center"
       fontSize="1.5rem"
-      bg="millet"
+      bg="plain"
       color={color}
       h="100vh"
     >
@@ -38,7 +38,7 @@ export const Me: React.FC<MeProps> = () => {
             performant, accessible, and intuitive.
           </Text>
         </Stack>
-        <GoTo to="#work" color="millet" hoverBg="dark">
+        <GoTo to="#work" color="plain" hoverBg="dark">
           <Text>
             Check out{" "}
             <Box as="span" fontWeight="bold">

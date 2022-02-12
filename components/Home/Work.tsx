@@ -9,7 +9,7 @@ export const Work: React.FC = () => {
         id="projects"
         spacing={8}
         align="center"
-        color="corn"
+        color="lessPlain"
         fontSize="1.2rem"
         w="full"
         maxW="container.lg"
@@ -21,7 +21,7 @@ export const Work: React.FC = () => {
         <Heading
           position="relative"
           borderBottom="solid 0.2rem"
-          borderColor="corn"
+          borderColor="lessPlain"
           pb={2}
           mb="1.5rem"
         >
@@ -58,7 +58,7 @@ export const Work: React.FC = () => {
           ]}
         />
       </Stack>
-      <GoTo to="#contact" color="dark" hoverBg="corn" pb="8rem">
+      <GoTo to="#contact" color="dark" hoverBg="lessPlain" pb="8rem">
         <Text>
           Wanna{" "}
           <Box as="span" fontWeight="bold">

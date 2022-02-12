@@ -8,14 +8,12 @@ const Spacing = () => <Box flex="0 1" w="10rem" h="full" />;
 
 export const Contact: React.FC<ContactProps> = () => {
   return (
-    <Center id="contact" bgColor="corn" h="100vh" px="1rem">
+    <Center id="contact" bgColor="lessPlain" h="100vh" px="1rem">
       <Flex
         className="contact-container"
         justify="center"
         align="center"
         textAlign="center"
-        border="1px solid"
-        borderColor="theme"
         maxW="full"
         px="1rem"
         py="10rem"
@@ -63,7 +61,7 @@ export const Contact: React.FC<ContactProps> = () => {
             </Link>
             <GoTo
               to="#me"
-              color="corn"
+              color="lessPlain"
               hoverBg="dark"
               isTop
               position="absolute"
