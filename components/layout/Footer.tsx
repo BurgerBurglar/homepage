@@ -5,7 +5,7 @@ export const Footer: React.FC = () => {
   return (
     <Flex color="plain" bgColor="dark" h="3rem">
       <Container>
-        <Center h="full">© Shuo Tian 2022, no rights reserved</Center>
+        <Center h="full">© Shuo Tian 2022, no rights reserved.</Center>
       </Container>
     </Flex>
   );
