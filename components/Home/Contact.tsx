@@ -7,8 +7,10 @@ interface ContactProps {}
 export const Contact: React.FC<ContactProps> = () => {
   return (
     <Center id="contact" bgColor="lessPlain" h="100vh" px="1rem">
-      <Flex direction="column" align="center">
-        <Heading fontSize="4rem">Let&apos;s get in touch.</Heading>
+      <Flex direction="column" align="center" textAlign="center">
+        <Heading fontSize="clamp(3rem, 7vw,4rem)">
+          Let&apos;s get in touch.
+        </Heading>
         <Text fontSize="1.5rem" mt={3}>
           Want to hire me, work with me on a side project, or simply say hi?
         </Text>

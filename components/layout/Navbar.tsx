@@ -118,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
               </>
             ) : (
               <>
-                <HStack spacing="clamp(1rem, 10vw, 5rem)" w="full">
+                <HStack spacing="5rem" w="full">
                   {[icon, navLinks]}
                 </HStack>
                 {selection}
