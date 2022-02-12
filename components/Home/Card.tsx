@@ -114,6 +114,7 @@ export const Card: React.FC<CardProps> = ({
             <Center
               key={tag}
               fontFamily="mono"
+              fontSize="1rem"
               border="1px solid"
               px="0.5em"
               py="0.1em"
