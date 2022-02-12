@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
 
   const icon = (
     <NavLink
-      href="/home"
+      href="/"
       h="36px"
       content={<Image src="/favicon.ico" alt="logo" width={36} height={36} />}
     />
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
 
   const navLinks = [
     <NavLink key={0} href="/blogs" content="blogs" />,
-    <NavLink key={1} href="/" content="retro" />,
+    <NavLink key={1} href="/retro" content="retro" />,
   ];
 
   const selection = (

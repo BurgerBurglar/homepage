@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const { pathname } = router;
 
-  if (pathname === "/") return <Component {...pageProps} />;
+  if (pathname === "/retro") return <Component {...pageProps} />;
   return (
     <ChakraProvider theme={theme}>
       <Layout>

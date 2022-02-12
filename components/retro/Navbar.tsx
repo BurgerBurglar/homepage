@@ -17,13 +17,13 @@ export const Navbar: React.FC<NavbarProps> = () => {
       <nav>
         <div className="navContainer">
           <span className="logo">
-            <Link href="/" passHref>
+            <Link href="/retro" passHref>
               <a>Shuo Tian</a>
             </Link>
           </span>
           <ul className="navLinks">
             <li>
-              <Link href="/" passHref>
+              <Link href="/retro" passHref>
                 <a>Home</a>
               </Link>
             </li>
@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
               </Link>
             </li>
             <li>
-              <Link href="/home" passHref>
+              <Link href="/" passHref>
                 <a>Take me to the modern world</a>
               </Link>
             </li>
