@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="robots" content="index" />
+        <meta name="description" content="Shuo Tian homepage" />
       </Head>
       <body>
         <Main />
