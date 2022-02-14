@@ -37,7 +37,7 @@ export const Work: React.FC = () => {
         <Card
           name="Take Me Home"
           link="https://takemehome.shuo.rocks/"
-          description="Wanna adopt?"
+          description="Adopt, don't shop."
           image="/take-me-home.webp"
           tags={["React", "Next.js", "TypeScript"]}
         />
