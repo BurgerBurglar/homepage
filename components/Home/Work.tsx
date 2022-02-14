@@ -32,14 +32,19 @@ export const Work: React.FC = () => {
           link="https://megacritic.shuo.rocks/"
           description="For movie fanatics. Rate, review, and explore."
           image="/megacritic.webp"
-          tags={["React", "Next.js", "TypeScript", "Chakra UI"]}
+          tags={[
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Static Site Generation (SSG)",
+          ]}
         />
         <Card
           name="Take Me Home"
           link="https://takemehome.shuo.rocks/"
           description="Adopt, don't shop."
           image="/take-me-home.webp"
-          tags={["React", "Next.js", "TypeScript"]}
+          tags={["React", "Next.js", "TypeScript", "Chakra UI"]}
         />
         <Card
           name="No Name"
