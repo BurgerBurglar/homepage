@@ -121,13 +121,16 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                 <HStack spacing="5rem" w="full">
                   {[icon, navLinks]}
                 </HStack>
-                {selection}
+                {/* {selection} */}
               </>
             )}
           </Flex>
           {!isMobile || !isOpen ? null : (
             <VStack spacing={4} align="start" py={4}>
-              {[navLinks, selection]}
+              {[
+                navLinks,
+                // selection
+              ]}
             </VStack>
           )}
         </Container>
