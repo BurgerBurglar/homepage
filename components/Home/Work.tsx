@@ -28,15 +28,17 @@ export const Work: React.FC = () => {
           Things that I&apos;ve made
         </Heading>
         <Card
-          name="Megacritic"
-          link="https://megacritic.shuo.rocks/"
-          description="For movie fanatics. Rate, review, and explore."
-          image="/megacritic.webp"
+          name="Chinesify"
+          link="https://chinesify.shuo.rocks/"
+          description="Your name in Chinese, without sounding funny."
+          image="/chinesify.webp"
           tags={[
+            "Full-stack",
             "React",
-            "Next.js",
             "TypeScript",
-            "Static Site Generation (SSG)",
+            "Tailwind CSS",
+            "Python",
+            "FastAPI",
           ]}
         />
         <Card
@@ -52,8 +54,8 @@ export const Work: React.FC = () => {
           description="Post, comment, and reply anonymously."
           image="/megacritic.webp"
           tags={[
+            "Full-stack",
             "React",
-            "Next.js",
             "TypeScript",
             "Express.js",
             "Prisma",
