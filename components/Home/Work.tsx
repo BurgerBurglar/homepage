@@ -50,9 +50,9 @@ export const Work: React.FC = () => {
         />
         <Card
           name="No Name"
-          link="https://megacritic.vercel.app/"
-          description="Post, comment, and reply anonymously."
-          image="/megacritic.webp"
+          link="https://no-name.shuo.rocks/"
+          description="Let's meet, anonymously."
+          image="/no-name.webp"
           tags={[
             "Full-stack",
             "React",
