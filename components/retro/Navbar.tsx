@@ -46,6 +46,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           background-color: darkblue;
           display: flex;
           justify-content: center;
+          height: 3rem;
         }
 
         .navContainer {
