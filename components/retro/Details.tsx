@@ -16,6 +16,7 @@ import {
   SiLinkedin,
   SiGithub,
   SiMaildotru,
+  SiChakraui,
 } from "react-icons/si";
 import { useBreakPoint } from "../../utils/useBreakPoint";
 
@@ -53,7 +54,7 @@ export const Details: React.FC<DetailsProps> = () => {
               <DiJavascript1 color="#F0DB4F" /> JavaScript
             </li>
             <li>
-              <FaReact color="#61DBFB" /> React.js
+              <FaReact color="#61DBFB" /> React.js / React Native
             </li>
             <li>
               <SiNextdotjs color="white" /> Next.js
@@ -63,7 +64,8 @@ export const Details: React.FC<DetailsProps> = () => {
               SASS
             </li>
             <li>
-              <SiMaterialui color="#007FFF" /> MaterialUI
+              <SiMaterialui color="#007FFF" /> MaterialUI /{" "}
+              <SiChakraui color="4dc9c2" /> Chakra UI
             </li>
             <li>
               <SiGraphql color="#e535ab" /> GraphQL
