@@ -17,6 +17,9 @@ const theme = extendTheme({
     textAccent: "#d23669",
     nav: "#01497C",
   },
+  fonts: {
+    blogHeading: "'Noto Serif', serif",
+  },
 });
 
 export default theme;

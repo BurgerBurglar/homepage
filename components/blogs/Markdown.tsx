@@ -14,6 +14,8 @@ const Markdown: React.FC<MarkdownProps> = ({ markdown, css = {} }) => {
       sx={{
         ".markdown-body": {
           bgColor: "transparent",
+          fontFamily: "blogHeading",
+          fontSize: "1.2rem",
         },
         ".markdown-body a": {
           color: "textAccent",
