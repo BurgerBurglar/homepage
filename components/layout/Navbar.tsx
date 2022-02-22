@@ -1,30 +1,14 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Button,
   Container,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
   Flex,
   FlexProps,
   HStack,
   IconButton,
-  Input,
   Link,
   LinkProps,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Select,
-  Stack,
   useBoolean,
-  useDisclosure,
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
@@ -64,25 +48,6 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
     <NavLink key={1} href="/retro" content="retro" />,
   ];
 
-  const selection = (
-    <Select
-      variant="unstyled"
-      defaultValue="en"
-      fontWeight="bold"
-      w="8em"
-      ml="auto"
-      sx={{
-        option: {
-          bgColor: "nav",
-          color: color,
-        },
-      }}
-    >
-      <option value="en">English</option>
-      <option value="zh-CN">简体中文</option>
-    </Select>
-  );
-
   return (
     <>
       <Flex
@@ -93,6 +58,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
         position="fixed"
         zIndex={9}
         w="full"
+        {...props}
       >
         <Container maxW="container.lg">
           <Flex
@@ -100,7 +66,6 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
             justifyContent="space-between"
             align="center"
             fontSize="1.2rem"
-            {...props}
           >
             {isMobile ? (
               <>

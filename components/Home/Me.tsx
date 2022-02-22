@@ -1,12 +1,12 @@
 import { AspectRatio, Box, Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { BsMouse } from "react-icons/bs";
+import { NAVBAR_HEIGHT } from "../../utils/constants";
 import { GoTo } from "./GoTo";
 
 interface MeProps {}
 
 export const Me: React.FC<MeProps> = () => {
-  const color = "text";
   return (
     <Flex
       id="me"
@@ -16,8 +16,8 @@ export const Me: React.FC<MeProps> = () => {
       textAlign="center"
       fontSize="1.5rem"
       bg="plain"
-      color={color}
-      minH="100vh"
+      color="text"
+      minH={`calc(100vh - ${NAVBAR_HEIGHT})`}
       pt="4rem"
       pb="2rem"
     >
@@ -67,7 +67,7 @@ export const Me: React.FC<MeProps> = () => {
           className="line"
           w="2px"
           h="5rem"
-          bgColor={color}
+          bgColor="text"
           transform="translateY(9.5px)"
         />
         <Box
@@ -76,7 +76,7 @@ export const Me: React.FC<MeProps> = () => {
           h="10px"
           borderTop="2px solid"
           borderRight="2px solid"
-          borderColor={color}
+          borderColor="text"
           transform="rotate(135deg)"
         />
       </Flex>
