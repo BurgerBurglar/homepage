@@ -11,7 +11,7 @@ interface OverviewProps {
 const Overview: React.FC<OverviewProps> = ({ blog }) => {
   return (
     <Stack p={5}>
-      <Heading as="h3" color="accent">
+      <Heading as="h3" color="textAccent">
         {blog.title}
       </Heading>
       <Text fontSize="1rem">{formatDate(blog.createdAt)}</Text>

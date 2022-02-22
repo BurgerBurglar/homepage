@@ -14,6 +14,7 @@ const theme = extendTheme({
     accent: "#BB3E03",
     lessAccent: "#EE9B00",
     text: "#001219",
+    textAccent: "#d23669",
     nav: "#01497C",
   },
 });
