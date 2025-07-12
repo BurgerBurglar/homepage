@@ -1,4 +1,4 @@
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons"
 import {
   Box,
   Container,
@@ -10,30 +10,30 @@ import {
   LinkProps,
   useBoolean,
   VStack,
-} from "@chakra-ui/react";
-import Image from "next/image";
-import NextLink from "next/link";
-import { ReactElement, useRef } from "react";
-import { useBreakPoint } from "../../utils/useBreakPoint";
+} from "@chakra-ui/react"
+import Image from "next/image"
+import NextLink from "next/link"
+import { ReactElement, useRef } from "react"
+import { useBreakPoint } from "../../utils/useBreakPoint"
 
 interface NavLinkProps extends LinkProps {
-  href: string;
-  content: string | ReactElement;
+  href: string
+  content: string | ReactElement
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, content, ...linkProps }) => (
   <NextLink href={href} passHref>
     <Link {...linkProps}>{content}</Link>
   </NextLink>
-);
+)
 
 interface NavbarProps extends FlexProps {}
 export const Navbar: React.FC<NavbarProps> = (props) => {
-  const color = "white";
-  const isMobile = useBreakPoint(768);
+  const color = "white"
+  const isMobile = useBreakPoint(768)
 
-  const [isOpen, { toggle, off }] = useBoolean();
-  const btnRef = useRef<HTMLButtonElement>(null);
+  const [isOpen, { toggle, off }] = useBoolean()
+  const btnRef = useRef<HTMLButtonElement>(null)
 
   const icon = (
     <NavLink
@@ -41,12 +41,12 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       h="36px"
       content={<Image src="/favicon.ico" alt="logo" width={36} height={36} />}
     />
-  );
+  )
 
   const navLinks = [
-    <NavLink key={0} href="/blogs" content="blogs" />,
+    // <NavLink key={0} href="/blogs" content="blogs" />,
     <NavLink key={1} href="/retro" content="retro" />,
-  ];
+  ]
 
   return (
     <>
@@ -111,5 +111,5 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
         />
       )}
     </>
-  );
-};
+  )
+}

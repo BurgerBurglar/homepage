@@ -1,16 +1,16 @@
-import Link from "next/link";
-import React from "react";
-import { useBreakPoint } from "../../utils/useBreakPoint";
-import { useFont } from "../../utils/useFont";
+import Link from "next/link"
+import React from "react"
+import { useBreakPoint } from "../../utils/useBreakPoint"
+import { useFont } from "../../utils/useFont"
 
 interface NavbarProps {}
 
 export const Navbar: React.FC<NavbarProps> = () => {
-  const font = useFont();
-  const isMobile = useBreakPoint(520);
-  const navFlexDirection = isMobile ? "column" : "row";
-  const navAlign = isMobile ? "start" : "center";
-  const linksMargin = isMobile ? 0 : "2rem";
+  const font = useFont()
+  const isMobile = useBreakPoint(520)
+  const navFlexDirection = isMobile ? "column" : "row"
+  const navAlign = isMobile ? "start" : "center"
+  const linksMargin = isMobile ? 0 : "2rem"
 
   return (
     <>
@@ -27,11 +27,11 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 <a>Home</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/blogs" passHref>
                 <a>Blogs</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/" passHref>
                 <a>Take me to the modern world</a>
@@ -107,5 +107,5 @@ export const Navbar: React.FC<NavbarProps> = () => {
         }
       `}</style>
     </>
-  );
-};
+  )
+}
